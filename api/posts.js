@@ -6,11 +6,11 @@ const api = new GhostContentAPI({
   version: 'canary',
 })
 
-export async function getPosts() {
+export async function getPosts(limit = 'all') {
   return await api.posts
     .browse({
       include: 'count.posts,tags,authors',
-      limit: 'all',
+      limit,
     })
     .catch((err) => {
       console.error(err) // eslint-disable-line
