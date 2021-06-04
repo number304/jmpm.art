@@ -1,17 +1,18 @@
 import GhostContentAPI from '@tryghost/content-api'
 
 const api = new GhostContentAPI({
-  url: process.env.GHOST_API_URL,
+  url: process.env.ghostURL,
   key: process.env.GHOST_CONTENT_KEY,
-  version: 'canary'
+  version: 'canary',
 })
 
 export async function getPosts() {
   return await api.posts
     .browse({
-      limit: 'all'
+      include: 'count.posts,tags,authors',
+      limit: 'all',
     })
-    .catch(err => {
-      console.log(err)
+    .catch((err) => {
+      console.error(err) // eslint-disable-line
     })
 }
