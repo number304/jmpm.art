@@ -15,7 +15,7 @@
           height="250px"
           :src="posts[0].feature_image"
         ></v-img>
-        <v-card-text>{{ posts[0].meta_description }}</v-card-text>
+        <v-card-text>{{ posts[0].excerpt }}</v-card-text>
       </v-card>
       <v-divider vertical class="ma-2"></v-divider>
       <div>
@@ -25,7 +25,7 @@
             <v-card-subtitle
               >Por {{ posts[1].primary_author.name }}</v-card-subtitle
             >
-            <v-card-text>{{ posts[1].meta_description }}</v-card-text>
+            <v-card-text>{{ posts[1].excerpt }}</v-card-text>
           </div>
           <v-img
             cover
@@ -35,7 +35,22 @@
             :src="posts[1].feature_image"
           ></v-img>
         </v-card>
+        <v-divider></v-divider>
+        <div class="d-flex">
+          <v-card elevation="0" class="pa-4" style="width: 48%">
+            <h3 class="pa-4 pb-0">{{ posts[2].title }}</h3>
+            <v-card-text>{{ posts[2].excerpt }}</v-card-text>
+          </v-card>
+          <v-divider vertical class="ma-2"></v-divider>
+          <v-card elevation="0" class="pa-4" style="width: 48%">
+            <h3 class="pa-4 pb-0">{{ posts[3].title }}</h3>
+            <v-card-text>{{ posts[3].excerpt }}</v-card-text>
+          </v-card>
+        </div>
       </div>
+    </div>
+    <div class="d-flex justify-center">
+      <v-btn color="primary mt-1">Ver todo</v-btn>
     </div>
   </v-container>
 </template>
