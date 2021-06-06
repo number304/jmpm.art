@@ -1,7 +1,7 @@
 <template>
   <v-container class="px-0" style="min-width: 100%; max-width: 1000px">
     <h2
-      class="text-h4 text-center mt-6 mb-4 mx-auto font-weight-medium"
+      class="text-h4 text-center mt-6 mb-md-4 mx-auto px-4 font-weight-medium"
       style="max-width: 600px"
     >
       Mis últimos posts con tips para emprender online
@@ -34,10 +34,7 @@
           vertical
           class="ma-2"
         ></v-divider>
-        <v-divider
-          v-if="$vuetify.breakpoint.smAndDown"
-          class="mx-4"
-        ></v-divider>
+        <v-divider v-else class="mx-4"></v-divider>
         <div>
           <v-card
             elevation="0"
@@ -74,10 +71,7 @@
               vertical
               class="ma-2"
             ></v-divider>
-            <v-divider
-              v-if="$vuetify.breakpoint.xsOnly"
-              class="mx-4"
-            ></v-divider>
+            <v-divider v-else class="mx-4"></v-divider>
             <v-card
               elevation="0"
               class="pa-4"
@@ -91,7 +85,7 @@
       </client-only>
     </div>
     <div class="d-flex justify-center">
-      <v-btn color="primary mt-1">Ver todo</v-btn>
+      <v-btn color="secondary mt-1">Ver todo</v-btn>
     </div>
   </v-container>
 </template>

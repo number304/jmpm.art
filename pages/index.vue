@@ -1,5 +1,6 @@
 <template>
   <div>
+    <PresentationBanner />
     <FeaturedPosts :posts="posts" />
   </div>
 </template>
