@@ -51,10 +51,11 @@ export default {
     theme: {
       themes: {
         light: {
-          primary: '#FEE224',
+          primary: '#a9ffcb',
           accent: '#5e2bff',
           secondary: '#131012',
           error: '#f8333c',
+          warning: '#FEE224',
         },
         dark: {
           primary: colors.blue.darken2,

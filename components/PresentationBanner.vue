@@ -1,7 +1,15 @@
 <template>
-  <div style="background-color: #a9ffcb">
+  <div class="primary">
     <v-container
-      class="d-flex flex-column flex-sm-row justify-center align-center py-8"
+      class="
+        d-flex
+        flex-column flex-sm-row
+        justify-center
+        align-center
+        py-sm-8
+        pb-8
+        pt-6
+      "
     >
       <client-only>
         <div style="max-width: 380px">
