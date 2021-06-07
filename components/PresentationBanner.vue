@@ -7,8 +7,8 @@
         justify-center
         align-center
         py-sm-8
-        pb-8
-        pt-6
+        pb-9
+        pt-7
       "
     >
       <client-only>

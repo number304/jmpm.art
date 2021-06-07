@@ -1,5 +1,5 @@
 <template>
-  <v-container class="px-0" style="min-width: 100%; max-width: 1000px">
+  <v-container class="px-0 pb-9" style="min-width: 100%; max-width: 1000px">
     <h2
       class="text-h4 text-center mt-6 mb-md-4 mx-auto px-4 font-weight-medium"
       style="max-width: 600px"
