@@ -1,7 +1,9 @@
 <template>
   <div class="primary">
     <v-container class="py-8" style="max-width: 900px">
-      <h2 class="text-center">¡Hagamos tu proyecto real!</h2>
+      <h2 class="text-center text-h4 font-weight-medium">
+        ¡Hagamos tu proyecto real!
+      </h2>
       <p class="overline text-center mb-2 mb-sm-4">
         Todas las páginas incluyen:
       </p>
