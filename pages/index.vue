@@ -4,6 +4,7 @@
     <FeaturedPosts :posts="posts" />
     <WebFeatures />
     <EcommercePlans />
+    <SuscribeBanner />
   </div>
 </template>
 

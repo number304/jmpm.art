@@ -10,7 +10,7 @@
             :elevation="hover ? 8 : 2"
             max-width="320"
             min-width="280"
-            class="mx-2 pa-4 transition-swing"
+            class="mx-md-2 mx-auto pa-4 transition-swing mb-8 mb-md-0"
           >
             <h4 class="text-center text-h5 font-weight-medium">Plan Brote</h4>
             <p class="text-center text-overline mb-1">
@@ -36,7 +36,7 @@
             :elevation="hover ? 8 : 2"
             max-width="320"
             min-width="280"
-            class="mx-2 pa-4 transition-swing"
+            class="mx-md-2 mx-auto pa-4 transition-swing"
           >
             <h4 class="text-center text-h5 font-weight-medium">Plan Roble</h4>
             <p class="text-center text-overline mb-1">
