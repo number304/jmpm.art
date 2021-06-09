@@ -5,6 +5,7 @@
     <WebFeatures />
     <EcommercePlans />
     <SuscribeBanner />
+    <PortfolioBanner />
   </div>
 </template>
 
