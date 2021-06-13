@@ -7,7 +7,7 @@
       <nuxt-link to="/">
         <IsotipoNegro />
       </nuxt-link>
-      <nuxt-link class="text-button mx-2 ml-6" to="/">Blog</nuxt-link>
+      <nuxt-link class="text-button mx-2 ml-6" to="/blog">Blog</nuxt-link>
       |
       <nuxt-link class="text-button mx-2" to="/">Contacto</nuxt-link>
     </div>

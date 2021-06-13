@@ -2,7 +2,7 @@ import GhostContentAPI from '@tryghost/content-api'
 
 const api = new GhostContentAPI({
   url: process.env.ghostURL,
-  key: process.env.GHOST_CONTENT_KEY,
+  key: process.env.apiKey,
   version: 'canary',
 })
 

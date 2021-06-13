@@ -1,5 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 const ghostURL = process.env.GHOST_API_URL
+const apiKey = process.env.GHOST_CONTENT_KEY
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -18,7 +19,8 @@ export default {
   },
 
   env: {
-    ghostURL
+    ghostURL,
+    apiKey,
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
