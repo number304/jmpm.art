@@ -4,7 +4,7 @@
       <defs>
         <style>
           .cls-1 {
-            fill: #121013;
+            fill: #131012;
           }
         </style>
       </defs>

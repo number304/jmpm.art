@@ -9,10 +9,25 @@ const api = new GhostContentAPI({
 export async function getPosts(limit = 'all') {
   return await api.posts
     .browse({
+      filter: 'tag:seo-y-emprendimiento',
       include: 'count.posts,tags,authors',
       limit,
     })
     .catch((err) => {
       console.error(err) // eslint-disable-line
     })
+}
+
+export function formatDate(post) {
+  const options = {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }
+
+  const dateFormatted = new Intl.DateTimeFormat('es', options).format(
+    new Date(post.published_at)
+  )
+
+  return dateFormatted
 }
