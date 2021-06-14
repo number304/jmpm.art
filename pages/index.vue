@@ -4,7 +4,7 @@
     <FeaturedPosts :posts="posts" />
     <WebFeatures />
     <EcommercePlans />
-    <SuscribeBanner />
+    <ContactBanner id="contact" />
     <PortfolioBanner id="portfolio" />
   </div>
 </template>

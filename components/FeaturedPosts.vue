@@ -16,7 +16,7 @@
         class="pa-4"
         :class="$vuetify.breakpoint.smAndDown ? 'mx-auto' : ''"
       >
-        <h3 class="pa-4 pb-0">{{ posts[0].title }}</h3>
+        <h3 class="pa-4 pb-0 text-h5 font-weight-bold">{{ posts[0].title }}</h3>
         <v-card-subtitle
           >Por {{ posts[0].primary_author.name }}</v-card-subtitle
         >
@@ -41,7 +41,9 @@
           class="pa-4 d-flex flex-column flex-sm-row"
         >
           <div :style="$vuetify.breakpoint.mdAndUp ? 'width: 60%' : ''">
-            <h3 class="pa-4 pb-0">{{ posts[1].title }}</h3>
+            <h3 class="pa-4 pb-0 text-h5 font-weight-bold">
+              {{ posts[1].title }}
+            </h3>
             <v-card-subtitle
               >Por {{ posts[1].primary_author.name }}</v-card-subtitle
             >
@@ -64,7 +66,9 @@
             class="pa-4"
             :style="$vuetify.breakpoint.smAndUp ? 'width: 48%' : ''"
           >
-            <h3 class="pa-4 pb-0">{{ posts[2].title }}</h3>
+            <h3 class="pa-4 pb-0 text-h5 font-weight-bold">
+              {{ posts[2].title }}
+            </h3>
             <v-card-text>{{ posts[2].excerpt }}</v-card-text>
           </v-card>
           <v-divider
@@ -78,7 +82,9 @@
             class="pa-4"
             :style="$vuetify.breakpoint.smAndUp ? 'width: 48%' : ''"
           >
-            <h3 class="pa-4 pb-0">{{ posts[3].title }}</h3>
+            <h3 class="pa-4 pb-0 text-h5 font-weight-bold">
+              {{ posts[3].title }}
+            </h3>
             <v-card-text>{{ posts[3].excerpt }}</v-card-text>
           </v-card>
         </div>

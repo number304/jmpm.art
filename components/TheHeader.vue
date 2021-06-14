@@ -9,7 +9,7 @@
       </nuxt-link>
       <nuxt-link class="text-button mx-2 ml-6" to="/blog">Blog</nuxt-link>
       |
-      <nuxt-link class="text-button mx-2" to="/">Contacto</nuxt-link>
+      <nuxt-link class="text-button mx-2" to="/#contact">Contacto</nuxt-link>
     </div>
   </v-app-bar>
 </template>

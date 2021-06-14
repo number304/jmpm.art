@@ -25,7 +25,7 @@
               comisiones como Yape o Plin.
             </p>
             <div class="text-center mt-4 mb-1">
-              <v-btn class="secondary" small>¡Empecemos!</v-btn>
+              <v-btn class="secondary" small to="/#contact">¡Empecemos!</v-btn>
             </div>
           </v-card>
         </template>
@@ -51,7 +51,7 @@
               pagos con crédito, etc.
             </p>
             <div class="text-center mt-4 mb-1">
-              <v-btn class="secondary" small>¡Lo quiero!</v-btn>
+              <v-btn class="secondary" small to="/#contact">¡Lo quiero!</v-btn>
             </div>
           </v-card>
         </template>

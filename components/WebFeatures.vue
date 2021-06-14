@@ -43,7 +43,7 @@
               </ul>
             </v-container>
             <div class="d-flex justify-center mt-2 mb-4">
-              <v-btn class="secondary">Contacto</v-btn>
+              <v-btn class="secondary" to="/#contact">Contacto</v-btn>
             </div>
           </v-col>
         </v-row>
