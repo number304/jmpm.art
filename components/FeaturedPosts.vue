@@ -45,7 +45,9 @@
             <v-card-subtitle
               >Por {{ posts[1].primary_author.name }}</v-card-subtitle
             >
-            <v-card-text>{{ posts[1].excerpt }}</v-card-text>
+            <v-card-text style="color: rgba(0, 0, 0, 0.6)">{{
+              posts[1].excerpt
+            }}</v-card-text>
           </div>
           <v-img
             cover
