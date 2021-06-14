@@ -83,7 +83,7 @@
       </div>
     </div>
     <div class="d-flex justify-center">
-      <v-btn color="secondary mt-1">Ver todo</v-btn>
+      <v-btn to="/blog" color="secondary mt-1">Ver todo</v-btn>
     </div>
   </v-container>
 </template>

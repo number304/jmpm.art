@@ -9,7 +9,7 @@
         <strong>Jose Miguel Pedraza Mateo</strong>
       </p>
       <div>
-        <nuxt-link class="text-button mx-2 ml-6" to="/">Blog</nuxt-link>
+        <nuxt-link class="text-button mx-2 ml-6" to="/blog">Blog</nuxt-link>
         <span class="primary--text"> | </span>
         <nuxt-link class="text-button mx-2" to="/">Contacto</nuxt-link>
       </div>

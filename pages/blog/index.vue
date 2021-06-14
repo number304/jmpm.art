@@ -4,8 +4,14 @@
     <p class="text-overline text-center">Con este contenido de primera</p>
 
     <v-row>
-      <v-col v-for="(post, index) in posts" :key="index" cols="12" sm="6">
-        <PostCard :post="post" />
+      <v-col
+        v-for="(post, index) in posts"
+        :key="index"
+        cols="12"
+        sm="6"
+        :md="index === 0 ? 12 : 4"
+      >
+        <PostCard :post="post" :index="index" />
       </v-col>
     </v-row>
   </v-container>
