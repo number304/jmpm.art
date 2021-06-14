@@ -10,9 +10,17 @@ export async function getPosts(limit = 'all') {
   return await api.posts
     .browse({
       filter: 'tag:seo-y-emprendimiento',
-      include: 'count.posts,tags,authors',
+      include: 'count.posts,authors',
       limit,
     })
+    .catch((err) => {
+      console.error(err) // eslint-disable-line
+    })
+}
+
+export async function getSinglePost(postSlug) {
+  return await api.posts
+    .read({ slug: postSlug, include: 'authors' })
     .catch((err) => {
       console.error(err) // eslint-disable-line
     })
