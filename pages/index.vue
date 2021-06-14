@@ -5,7 +5,7 @@
     <WebFeatures />
     <EcommercePlans />
     <SuscribeBanner />
-    <PortfolioBanner />
+    <PortfolioBanner id="portfolio" />
   </div>
 </template>
 

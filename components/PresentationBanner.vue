@@ -33,7 +33,7 @@
             ficción, Javascript y próximamente Typescript.
           </p>
           <div class="text-center text-sm-left">
-            <v-btn class="secondary">Portafolio</v-btn>
+            <v-btn class="secondary" to="/#portfolio">Portafolio</v-btn>
           </div>
         </div>
         <v-avatar class="ml-sm-1 ml-md-4 d-none d-sm-flex" size="320">

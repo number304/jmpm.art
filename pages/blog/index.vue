@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+  <v-container class="py-8">
     <h1 class="text-center">¡Emprende en Internet de la mejor manera!</h1>
-    <p class="text-overline text-center">Con este contenido de primera</p>
+    <p class="text-overline text-center mb-6">Con este contenido de primera</p>
 
     <v-row>
       <v-col

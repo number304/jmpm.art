@@ -2,7 +2,9 @@
   <v-footer padless>
     <v-card flat tile width="100%" class="secondary text-center pa-6">
       <div class="d-flex justify-center">
-        <IsotipoBlanco />
+        <nuxt-link to="/">
+          <IsotipoBlanco />
+        </nuxt-link>
       </div>
       <p class="white--text mb-0">
         {{ new Date().getFullYear() }} —
