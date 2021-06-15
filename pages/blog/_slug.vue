@@ -1,5 +1,11 @@
 <template>
   <div>
+    <SocialHead
+      :image="post.feature_image"
+      :title="post.title"
+      :og-description="post.og_description || post.excerpt"
+      :twitter-description="post.twitter_description || post.excerpt"
+    />
     <v-container id="dev-post-header" class="pt-8 pb-6">
       <h1 class="mb-4 text-sm-h3 text-h4 font-weight-bold">{{ post.title }}</h1>
       <p class="dev-post-excerpt text-h6 font-weight-regular mb-4">
@@ -26,7 +32,7 @@
         :src="post.feature_image"
       ></v-img>
     </v-container>
-    <v-container id="dev-post-body"> </v-container>
+    <v-container id="dev-post-body"></v-container>
   </div>
 </template>
 
@@ -37,6 +43,18 @@ export default {
   async asyncData({ params }) {
     const post = await getSinglePost(params.slug)
     return { post }
+  },
+  head() {
+    return {
+      title: this.post.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.post.excerpt,
+        },
+      ],
+    }
   },
   mounted() {
     document

@@ -20,10 +20,14 @@ export async function getPosts(limit = 'all') {
 
 export async function getSinglePost(postSlug) {
   return await api.posts
-    .read({ slug: postSlug, include: 'authors' })
+    .read({ slug: postSlug }, { include: 'authors' })
     .catch((err) => {
       console.error(err) // eslint-disable-line
     })
+}
+
+export async function getTag() {
+  return await api.tags.read({ slug: 'seo-y-emprendimiento' })
 }
 
 export function formatDate(post) {

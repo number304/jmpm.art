@@ -5,17 +5,17 @@ const apiKey = process.env.GHOST_CONTENT_KEY
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - jmpm.art',
-    title: 'jmpm.art',
+    titleTemplate: '%s - Jose Miguel Pedraza Mateo',
+    title: '¡Bienvenido!',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'es',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: '¿Necesitas un desarrollador web? Pues soy tu mejor alternativa, ven y mira mi trabajo. Tan solo estoy a un chat de distancia, el momento para comenzar es ahora.' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' }],
   },
 
   env: {

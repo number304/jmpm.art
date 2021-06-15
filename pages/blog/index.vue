@@ -1,5 +1,11 @@
 <template>
   <v-container class="py-8">
+    <SocialHead
+      :image="tag.feature_image"
+      :title="title"
+      :og-description="tag.og_description || tag.description"
+      :twitter-description="tag.twitter_description || tag.description"
+    />
     <h1 class="text-center">¡Emprende en Internet de la mejor manera!</h1>
     <p class="text-overline text-center mb-6">Con este contenido de primera</p>
 
@@ -18,12 +24,30 @@
 </template>
 
 <script>
-import { getPosts, formatDate } from '@/api/posts'
+import { getPosts, getTag, formatDate } from '@/api/posts'
 
 export default {
   async asyncData() {
     const posts = await getPosts()
-    return { posts }
+    const tag = await getTag()
+    return { posts, tag }
+  },
+  data() {
+    return {
+      title: 'Blog y SEO para volar',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.tag.description,
+        },
+      ],
+    }
   },
   methods: {
     formatDate,
