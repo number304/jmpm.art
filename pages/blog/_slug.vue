@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-container class="dev-post-header pt-8 pb-6">
-      <h1 class="mb-4 text-h3 font-weight-bold">{{ post.title }}</h1>
+    <v-container id="dev-post-header" class="pt-8 pb-6">
+      <h1 class="mb-4 text-sm-h3 text-h4 font-weight-bold">{{ post.title }}</h1>
       <p class="dev-post-excerpt text-h6 font-weight-regular mb-4">
         {{ post.excerpt }}
       </p>
@@ -26,6 +26,7 @@
         :src="post.feature_image"
       ></v-img>
     </v-container>
+    <v-container id="dev-post-body"> </v-container>
   </div>
 </template>
 
@@ -37,6 +38,11 @@ export default {
     const post = await getSinglePost(params.slug)
     return { post }
   },
+  mounted() {
+    document
+      .querySelector('#dev-post-body')
+      .insertAdjacentHTML('afterbegin', this.post.html)
+  },
   methods: {
     formatDate,
   },
@@ -44,8 +50,8 @@ export default {
 </script>
 
 <style lang="sass">
-.dev-post-header
-  max-width: 700px
+#dev-post-header
+  max-width: 720px
 
   h1
     line-height: 1.15
@@ -53,4 +59,56 @@ export default {
   .dev-post-excerpt
     line-height: 1.4em
     opacity: 0.6
+
+#dev-post-body
+  max-width: 720px
+
+  h2
+    margin-top: 2em
+
+  blockquote
+    margin-top: 5vmin
+    position: relative
+    font-family: Georgia,Times,serif
+    font-style: italic
+    @media (max-width: 599px)
+      font-size: 1.1rem
+    font-size: 1.3rem
+    &:before
+      content: ""
+      position: absolute
+      @media (max-width: 599px)
+        left: -2.5vmin
+      left: -0.6em
+      top: 0
+      bottom: 0
+      width: .3rem
+      background: #a9ffcb
+
+  p
+    margin-top: 5vmin
+    line-height: 1.6em
+    font-family: Georgia,Times,serif
+    @media (max-width: 599px)
+      font-size: 1.1rem
+    font-size: 1.3rem
+
+  >h2+*
+    margin-top: 0.5rem
+
+  figure
+    img
+      display: block
+      max-width: 100%
+      height: auto
+    figcaption
+      padding: 1rem 1rem 0
+      text-align: center
+      font-size: 0.8rem
+      font-weight: 600
+      color: rgba(0, 0, 0, 0.5)
+      a
+        color: #131012
+        text-decoration-color: #a9ffcb
+        text-decoration-thickness: 3px
 </style>
