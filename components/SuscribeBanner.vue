@@ -7,7 +7,7 @@
       <p class="text-overline">Y recibe contenido de valor, gratis</p>
       <div class="d-flex justify-center">
         <v-icon class="mr-1">mdi-arrow-right</v-icon>
-        <v-btn class="secondary">Hagámoslo</v-btn>
+        <v-btn class="secondary" href="http://eepurl.com/hBk41j" target="_blank">Hagámoslo</v-btn>
         <v-icon class="ml-1">mdi-arrow-left</v-icon>
       </div>
     </v-container>

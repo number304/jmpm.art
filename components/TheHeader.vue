@@ -7,9 +7,9 @@
       <nuxt-link to="/">
         <IsotipoNegro />
       </nuxt-link>
-      <nuxt-link class="text-button mx-2 ml-6" to="/blog">Blog</nuxt-link>
+      <nuxt-link class="text-button mx-2 ml-6" style="text-decoration: none; color: black" to="/blog">Blog</nuxt-link>
       |
-      <nuxt-link class="text-button mx-2" to="/#contact">Contacto</nuxt-link>
+      <nuxt-link class="text-button mx-2" style="text-decoration: none; color: black" to="/#contact">Contacto</nuxt-link>
     </div>
   </v-app-bar>
 </template>
@@ -17,10 +17,3 @@
 <script>
 export default {}
 </script>
-
-<style scoped>
-a {
-  text-decoration: none;
-  color: black;
-}
-</style>

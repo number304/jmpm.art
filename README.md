@@ -1,4 +1,7 @@
 # jmpm.art
+The repo of my personal website, if you want to take a look at my work and my capabilities. Welcome!
+
+El código de mi web personal, por si quieres un vistazo técnico a mi trabajo y de lo que soy capaz. ¡Bienvenido!
 
 ## Build Setup
 

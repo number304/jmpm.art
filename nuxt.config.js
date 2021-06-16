@@ -18,6 +18,12 @@ export default {
     link: [{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' }],
   },
 
+  server: {
+    port: 8000
+  },
+
+  target: 'static',
+
   env: {
     ghostURL,
     apiKey,

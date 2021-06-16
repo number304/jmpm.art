@@ -102,6 +102,8 @@ export default {
       bottom: 0
       width: .3rem
       background: #a9ffcb
+    + figure
+      margin-top: 5vmin
 
   p
     margin-top: 5vmin
