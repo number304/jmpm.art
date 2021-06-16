@@ -15,7 +15,7 @@
             order-md="0"
           >
             <img
-              src="@/static/ecommerce_shop.png"
+              src="@/static/ecommerce_shop.jpg"
               alt="Ecommerce shop"
               height="300"
             />
