@@ -48,7 +48,18 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/google-analytics',
   ],
+
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID, // Is a fallback if no runtime config is provided
+  },
+
+  publicRuntineConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID,
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
