@@ -1339,10 +1339,10 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.15.tgz#6a9d143f7f4f49db2d782f9e1c8839a29b43ae23"
   integrity sha512-15spi3V28QdevleWBNXE4pIls3nFZmBbUGrW9IVPwiQczuSb9n76TCB4bsk8TSel+I1OkHEdPhu5QKMfY6rQHA==
 
-"@tryghost/content-api@^1.5.6":
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/@tryghost/content-api/-/content-api-1.5.6.tgz#19dc3c142afeb398ce77feec07edaac8d8ed6cd3"
-  integrity sha512-MtbAZl48ff27DNtn3+YGn7G+kknpskHEy5hJmi3ux9CPvLTuNY5GSrrqCkbpxJIaxAisVFVtIu9ejD0mPJGHFw==
+"@tryghost/content-api@^1.5.11":
+  version "1.5.11"
+  resolved "https://registry.yarnpkg.com/@tryghost/content-api/-/content-api-1.5.11.tgz#63cf19f52284555857aee3b97c7cb8b9d89a98aa"
+  integrity sha512-VsVr9YvKnLzGsCGkQHtlgzB1kd6GR21iwt9b/fhzIHOfq7dXt/8o7eDhKZRMriwvBLmMqCRC9Bdrr2zh8EIUQA==
   dependencies:
     axios "^0.21.1"
 
